@@ -1,0 +1,6 @@
+runtime: java
+env: flex
+
+handlers:
+- url: /db-service/.*
+  script: this field is required, but ignored
