@@ -3,6 +3,11 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8302/eureka/
+      defaultZone: https://eureka-service.stock-quote-tp.appspot.com/eureka/
   instance:
-    hostname: localhost
+    hostname: eureka-service.stock-quote-tp.appspot.com
+
+management:
+  server:
+    servlet:
+      context-path: /_ah
